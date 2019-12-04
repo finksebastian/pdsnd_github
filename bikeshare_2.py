@@ -31,6 +31,9 @@ def get_filters():
     return city, month, day
 
 def get_input(query, options):
+    """
+    a small helper function to add simple auto-complete to user input from the commandline
+    """
     while True:
         candidate = input(query)
         for c in options:
