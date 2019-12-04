@@ -1,15 +1,18 @@
 ### Date created
-Include the date you created this project and README file.
+2019-12-04
 
 ### Project Title
-Replace the Project Title
+Udacity Python Project: Bikeshare data
 
 ### Description
-Describe what your project is about and what it does
+A small Python program that allows to "investigate" a small dataset.
 
 ### Files used
-Include the files used
+bikeshare_2.py
+README.md
+readme.txt
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+I looked up a few things on stackoverflow (e.g. https://stackoverflow.com/questions/24870306/how-to-check-if-a-column-exists-in-pandas/39371897)
+I looked up options for formatting (https://mkaz.blog/code/python-string-format-cookbook/)
 

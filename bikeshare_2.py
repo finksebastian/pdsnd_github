@@ -31,6 +31,14 @@ def get_filters():
     return city, month, day
 
 def get_input(query, options):
+    """
+    deprecated! 
+    a small helper function to add simple auto-complete to user input from the commandline
+
+    Args:
+        (str) query - the question to ask the user
+        (set) options - the possible answers
+    """
     while True:
         candidate = input(query)
         for c in options:
@@ -39,6 +47,13 @@ def get_input(query, options):
                 return c
                 
 def get_input(query, options: set):
+        """
+    a small helper function to add simple auto-complete to user input from the commandline
+
+    Args:
+        (str) query - the question to ask the user
+        (set) options - the possible answers
+    """
     while True:
         candidate = input(query)
         filtered_set = set(filter(lambda e: e.startswith(candidate.lower()), options))
@@ -174,7 +189,10 @@ def user_stats(df):
     print('-'*40)
 
 def raw_data(df):
-    """Gives the option to iteratively display raw data """
+    """
+    Gives the option to iteratively display raw data\n
+    does not use auto-complete!
+    """
     options = {'yes', 'no'}
     cont = get_input("Would you like to see the raw data? ", options)
     index = 0
